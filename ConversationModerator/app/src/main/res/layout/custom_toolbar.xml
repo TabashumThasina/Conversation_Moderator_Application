@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="56.25dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/leftActionBarBtn1"
+            android:textSize="0sp"
+            android:paddingHorizontal="8dp"
+            android:onClick="leftActionBarBtnPressed"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/leftActionBarBtn2"
+            android:textSize="0sp"
+            android:paddingHorizontal="8dp"
+            android:onClick="leftActionBarBtnPressed"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/leftActionBarBtn3"
+            android:textSize="0sp"
+            android:paddingHorizontal="8dp"
+            android:onClick="leftActionBarBtnPressed"/>
+
+    <RelativeLayout
+            android:layout_gravity="end"
+            android:id="@+id/badge_layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="16dp"
+                android:paddingLeft="8dp"
+                android:id="@+id/rightActionBarBtn1"
+                android:onClick="rightActionBarBtnPressed"
+                android:textSize="0sp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:minWidth="18dp"
+                android:text="16"
+                android:visibility="gone"
+                android:maxLines="1"
+                android:layout_alignTop="@id/rightActionBarBtn1"
+                android:layout_alignRight="@id/rightActionBarBtn1"
+                android:textColor="#FFF"
+                android:layout_marginEnd="-8dp"
+                android:layout_marginTop="8dp"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:textAlignment="center"/>
+    </RelativeLayout>
+    <!--                android:background="@drawable/badgecounter"-->
+
+    <!--<android.support.v7.widget.AppCompatTextView-->
+    <!--android:layout_gravity="end"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:id="@+id/rightActionBarBtn1"-->
+    <!--android:onClick="rightActionBarBtnPressed"-->
+    <!--android:textSize="0sp" />-->
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="8dp"
+            android:id="@+id/rightActionBarBtn2"
+            android:onClick="rightActionBarBtnPressed"
+            android:textSize="0sp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="8dp"
+            android:id="@+id/rightActionBarBtn3"
+            android:onClick="rightActionBarBtnPressed"
+            android:textSize="0sp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:layout_gravity="center"
+            android:textSize="0sp"
+            android:lines="1"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/centerActionBarBtn"
+            android:onClick="centerActionBarBtn"/>
+
+</androidx.appcompat.widget.Toolbar>
